@@ -3,7 +3,6 @@ version: 0.2
 phases:
   install:
     commands:
-      - yum update -y
       - yum install -y  maven
     runtime-versions:
       java: openjdk8
