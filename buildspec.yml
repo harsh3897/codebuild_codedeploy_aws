@@ -2,15 +2,16 @@ version: 0.2
 
 environment_variables:
   plaintext:
-    JAVA_HOME: "/usr/lib/jvm/java-7-openjdk-amd64"
+    JAVA_HOME: "/usr/lib/jvm/java-8-openjdk-amd64"
 
 phases:
   install:
     commands:
       - apt-get update -y
+      - apt-get install openjdk-8-jdk
       - apt-get install -y maven
     runtime-versions:
-      java: openjdk7
+      java: openjdk8
   build:
     commands:
       - echo Build completed on `date`
