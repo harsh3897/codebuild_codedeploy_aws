@@ -8,7 +8,7 @@ phases:
   install:
     commands:
       - apt-get update -y
-      - apt-get install openjdk-8-jdk
+      - apt-get install default-jdk
       - apt-get install -y maven
     runtime-versions:
       java: openjdk11
